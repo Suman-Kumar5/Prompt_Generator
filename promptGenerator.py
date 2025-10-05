@@ -69,7 +69,8 @@ pipeline_with_history = RunnableWithMessageHistory(
 )
 
 response = pipeline_with_history.invoke(
-    {"query": "I want a prompt to generate a logo for a tech startup using DALL·E"},
+    {"query": "I want a prompt to generate a ppt"},
     config={"session_id": "user123"}
 )
 print(response.content)
+
